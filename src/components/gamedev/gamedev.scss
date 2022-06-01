@@ -5,60 +5,52 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    text-decoration: none;
 
     h1{
-        font-size: 50px;
+        font-size: 40px;
         color: white;
     }
 
-    ul{
-        margin: 10px;
-        padding: 0;
-        list-style: none;
-        display: flex;       
-    }
     .container{
-        width: 70%;
+        width: 85%;
         display: flex;
-        align-items: center;
+        flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap;   
+        margin: 10px;
 
-        // @include mobile{
-        //     width: 100%;
-        //   }
-        .item{
-            width: 220px;
-            height: 150px;
-            border-radius: 20px;
-            border: 1px solid lightgrey;
+        @include mobile{
+            width: 30%;
+          }
+
+        .item {
+            display: inline;
             margin: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            position: relative;
-            transition: all .5s ease;
+            width: 80%;
+            border-radius: 20px;
+            border: 1px solid rgb(240, 239, 239);
             cursor: pointer;
-            h3{
-                position: absolute;
-                font-size: 20px;
-            }
-            img{
-                width: 100px;
-                height: 100px;
-                object-fit: cover;
-                z-index: 1;
-            }
 
-            &:hover{
-                background-color: $mainColor;
-                img{
-                    opacity: 0.2;
-                    z-index: 0;
+            img{
+                width: 50%;
+                object-fit: cover;
+                border: 3px solid red;
+
+                &:hover {
+                    background-color: $mainColor;
+                    transition:opacity 5s;
+                    }
                 }
+            h2{
+                position: relative;
+                font-size: 20px;
+                border: 3px solid red;
+
             }
 
         }
-    }
+
+    }        
 }

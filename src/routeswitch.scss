@@ -1,0 +1,16 @@
+@import "./global.scss";
+
+.routeswitch{
+    height: 100vh;
+    background-color: black;
+    scrollbar-width: none; //for firefox
+
+    @include mobile{
+        width: 30%vw;
+        height: 20%vh;
+      }
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}

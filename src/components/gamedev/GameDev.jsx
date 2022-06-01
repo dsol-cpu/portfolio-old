@@ -1,20 +1,29 @@
 import "./gamedev.scss";
-export default function Portfolio() {
+import { gamedev } from "../../data"
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
+export default function GameDev() {
   return (
-    <div className="gamedev" id="gamedev">
+    <motion.div 
+      className="gamedev"
+      id="gamedev"
+
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+    >
       <h1>Game Development</h1>
-      <div className="container">
-        {/* {data.map((d) => (
-          <div className="item">
-            <img
-              src={d.img}
-              alt=""
-            />
-            <h3>{d.title}</h3>
-          </div>
-        ))} */}
-      </div>      
-    </div>
-  );
+        <div className="container">
+          {gamedev.map((item) =>
+            <div className="item">
+              <Link to={'/' + item.id}>
+                <img src={item.img} alt="" />
+                <h2>{item.title}</h2>
+              </Link>
+            </div>
+          )}        
+        </div>
+    </motion.div>
+  )
 }
