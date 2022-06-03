@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.14b206e8.css",
+    "main.js": "/portfolio/static/js/main.b8740a72.js",
+    "static/media/me.png": "/portfolio/static/media/me.88f0783ef017fee01a72.png",
+    "static/media/brb_animation-bigger.gif": "/portfolio/static/media/brb_animation-bigger.a5af39901df1e67d9b13.gif",
+    "static/media/vector-download-icon.png": "/portfolio/static/media/vector-download-icon.c4a9a71e2d60cefcaf2c.png",
+    "index.html": "/portfolio/index.html",
+    "main.14b206e8.css.map": "/portfolio/static/css/main.14b206e8.css.map",
+    "main.b8740a72.js.map": "/portfolio/static/js/main.b8740a72.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14b206e8.css",
+    "static/js/main.b8740a72.js"
+  ]
+}
