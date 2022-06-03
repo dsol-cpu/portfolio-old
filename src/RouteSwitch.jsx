@@ -3,7 +3,6 @@ import Footer from "./components/footer/Footer";
 import AnimatedRoutes from "./AnimatedRoutes";
 import { BrowserRouter as Router} from 'react-router-dom';
 import "./routeswitch.scss"
-
 function RouteSwitch() {
   return (
     <Router>

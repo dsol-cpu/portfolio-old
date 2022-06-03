@@ -5,12 +5,14 @@
     background-color: black;
     scrollbar-width: none; //for firefox
 
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
     @include mobile{
         width: 30%vw;
         height: 20%vh;
       }
 
-    &::-webkit-scrollbar{
-        display: none;
-    }
+
 }

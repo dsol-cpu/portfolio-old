@@ -3,12 +3,34 @@
 .footer{
     margin-top: 1rem;
     padding: 1rem;
-    background-color: rgb(235, 195, 64);
+    background-color: black;
     left: 0;
     bottom: 0;
     width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    a{
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      &:hover{
+        color: yellow;
+      }
+    }
+    p{
+      color: white;
+      font-size: 20px;
+    }
 
-    // @import mobile{
 
-    // }
+    ul{
+      li{
+        img{
+
+        }
+      }
+    }
   }

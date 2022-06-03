@@ -1,17 +1,20 @@
-import "./about.scss"
-import Me from '../img/me.png'
+import "./about.scss";
+import Me from '../img/me.png';
+import DownloadIcon from '../img/vector-download-icon.png';
 import { motion } from "framer-motion";
 
 export default function About() {
-  const text = "Hi there! I'm a 23 year old software engineer, game developer, and artist based in Virginia.\n\n I have a BS in Computer Science from the College of William and Mary. I am passionate about creating meaningful experiences for others.  "
+  const text = "I'm David Solinsky. I'm a Software Engineer, game developer, and artist based in Herndon, Virginia.\n\n I am currently available for work at the following contacts:"
   return (
     <motion.div 
       className="about" 
       id="about"
 
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      exit={{opacity: 0}}
+      initial={{x: 300, opacity: 0}}
+      animate={{x: 0, opacity: 1}}
+      exit={{x: 300, opacity: 0}}
+      transition = {{delay: 0.2}}
+
     >
       <div className="container">
         <div className="left">
@@ -21,8 +24,9 @@ export default function About() {
           <span>
             <h1> {text} </h1>
               <div className="button-container">
-                <button className="button" span="text">
-                  Download Resume
+                <button className="button" >
+                  <a href="" className="text">Download Resume</a> 
+                  <img src={DownloadIcon} alt="" />
                 </button>
             </div>
           </span>

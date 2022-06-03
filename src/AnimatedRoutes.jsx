@@ -8,14 +8,19 @@ import { AnimatePresence } from "framer-motion";
 
 export default function AnimatedRoutes() {
     const location = useLocation();
+    const titleMap = [
+        {path: 'portfolio/', title:'Game Development', element: <GameDev/>},
+        {path: 'portfolio/concepts', title: 'Concepts', element: <Concepts/>},
+        {path: 'portfolio/about-me', title: 'About Me',element: <About/>},
+        {path: 'portfolio/quickquisine', title: 'Quick Quisine',element: <QuickQuisine/>},
+        {path: 'portfolio/parryt', title: 'Parryt', element: <Parryt/>}
+      ]
     return (
     <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-            <Route path="portfolio/" element={<GameDev/>}/>
-            <Route path="portfolio/concepts" element={<Concepts/>}/>
-            <Route path="portfolio/about-me" element={<About/>}/>
-            <Route path="/quickquisine" element={<QuickQuisine/>}/>
-            <Route path="/parryt" element={<Parryt/>}/>
+            {titleMap.map((item) => 
+            <Route path={item.path} element={item.element}/>
+            )}
         </Routes>
     </AnimatePresence>
   )

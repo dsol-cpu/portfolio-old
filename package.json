@@ -1,14 +1,15 @@
 {
+  "homepage": "http://dsol-cpu.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://dsol-cpu.github.io/portfolio",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^6.3.4",
+    "gh-pages": "^4.0.0",
     "npm": "^8.11.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
