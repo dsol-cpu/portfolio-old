@@ -1,16 +1,34 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.14b206e8.css",
-    "main.js": "/portfolio/static/js/main.b8740a72.js",
+    "main.css": "/portfolio/static/css/main.80406ffe.css",
+    "main.js": "/portfolio/static/js/main.2055b140.js",
+    "static/media/baseball_animatic-2.gif": "/portfolio/static/media/baseball_animatic-2.46bbd5504e8242e57ec3.gif",
+    "static/media/the boss concept art.png": "/portfolio/static/media/the boss concept art.1795c3b5288f60b804e2.png",
+    "static/media/concept_art amaki.png": "/portfolio/static/media/concept_art amaki.3c99618c406746078023.png",
+    "static/media/concept art _ hitomi.png": "/portfolio/static/media/concept art _ hitomi.797e0f22184d3aba80bf.png",
+    "static/media/initial art.png": "/portfolio/static/media/initial art.5a20e2cc788e4b56e373.png",
+    "static/media/Handwritten_2021-11-05_024722.jpg": "/portfolio/static/media/Handwritten_2021-11-05_024722.eed8fa4b9ad4bc5173d8.jpg",
+    "static/media/figuredrawing.png": "/portfolio/static/media/figuredrawing.300c4067e3bbea37836b.png",
     "static/media/me.png": "/portfolio/static/media/me.88f0783ef017fee01a72.png",
+    "static/media/qq-5.png": "/portfolio/static/media/qq-5.703f09dbb422a7a42530.png",
+    "static/media/Handwritten_2021-11-05_025629 (2).jpg": "/portfolio/static/media/Handwritten_2021-11-05_025629 (2).5b32a3c225bae2b02c71.jpg",
+    "static/media/qq-4.png": "/portfolio/static/media/qq-4.832e4b36dfb16de65b5d.png",
+    "static/media/qq-2.png": "/portfolio/static/media/qq-2.610f10d338c372bede03.png",
+    "static/media/qq-3.png": "/portfolio/static/media/qq-3.ff3e2722e4c21122576f.png",
+    "static/media/David_Solinsky_CV-5-27-2022.pdf": "/portfolio/static/media/David_Solinsky_CV-5-27-2022.6bdead368b9280ece5df.pdf",
+    "static/media/alien-search2.png": "/portfolio/static/media/alien-search2.592f5cb909578f06f6ce.png",
+    "static/media/qq-1.png": "/portfolio/static/media/qq-1.1b031af11adacdfb6870.png",
+    "static/media/parryt-screenshot.png": "/portfolio/static/media/parryt-screenshot.d5c41c865d87364f7b1d.png",
+    "static/media/alien-search1.png": "/portfolio/static/media/alien-search1.07ecbd1a588197c50d7e.png",
+    "static/media/arrows-spritesheet-with-char3.png": "/portfolio/static/media/arrows-spritesheet-with-char3.ebcb3c4bd3dd6e986437.png",
     "static/media/brb_animation-bigger.gif": "/portfolio/static/media/brb_animation-bigger.a5af39901df1e67d9b13.gif",
     "static/media/vector-download-icon.png": "/portfolio/static/media/vector-download-icon.c4a9a71e2d60cefcaf2c.png",
     "index.html": "/portfolio/index.html",
-    "main.14b206e8.css.map": "/portfolio/static/css/main.14b206e8.css.map",
-    "main.b8740a72.js.map": "/portfolio/static/js/main.b8740a72.js.map"
+    "main.80406ffe.css.map": "/portfolio/static/css/main.80406ffe.css.map",
+    "main.2055b140.js.map": "/portfolio/static/js/main.2055b140.js.map"
   },
   "entrypoints": [
-    "static/css/main.14b206e8.css",
-    "static/js/main.b8740a72.js"
+    "static/css/main.80406ffe.css",
+    "static/js/main.2055b140.js"
   ]
 }
