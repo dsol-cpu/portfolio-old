@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import TopbarMenu from "../topbarMenu/TopbarMenu";
-import GIF from "../img/brb_animation-bigger.gif";
 
 import "./topbar.scss"
 export default function Topbar() {
-  const subtitle = "Game Developer and Artist";
+  const subtitle = "Software Engineer | Game Developer | Artist";
   const [selected, setSelected] = useState("home");
   const list = [
-
     {
       id: "",
       title: "Game Development",
@@ -22,7 +20,6 @@ export default function Topbar() {
       title: "About Me",
     },
   ];
-
   
   return (
     <div className="topbar" id="topbar">
@@ -33,17 +30,17 @@ export default function Topbar() {
         <Link to="portfolio/" className="a">{subtitle}</Link>  
 
       <div className="wrapper">
-      <ul>
-        {list.map((item) => (
-          <TopbarMenu
-            title={item.title}
-            active={selected === item.id}
-            setSelected={setSelected}
-            id={item.id}
-          />
-        ))}
-     </ul>
-    </div>
-  </div>        
+        <ul>
+          {list.map((item) => (
+            <TopbarMenu
+              title={item.title}
+              active={selected === item.id}
+              setSelected={setSelected}
+              id={item.id}
+            />
+          ))}
+        </ul>
+      </div>
+    </div>        
   )
 }

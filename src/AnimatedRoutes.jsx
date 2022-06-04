@@ -5,21 +5,23 @@ import QuickQuisine from "./components/gamedev/games/quickquisine/QuickQuisine";
 import Parryt from "./components/gamedev/games/parryt/Parryt";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import UpintheAir from "./components/gamedev/games/upintheair/UpintheAir";
 
 export default function AnimatedRoutes() {
     const location = useLocation();
     const titleMap = [
-        {path: 'portfolio/', title:'Game Development', element: <GameDev/>},
-        {path: 'portfolio/concepts', title: 'Concepts', element: <Concepts/>},
-        {path: 'portfolio/about-me', title: 'About Me',element: <About/>},
-        {path: 'portfolio/quickquisine', title: 'Quick Quisine',element: <QuickQuisine/>},
-        {path: 'portfolio/parryt', title: 'Parryt', element: <Parryt/>}
+        {path: '', title:'Game Development', element: <GameDev/>},
+        {path: 'concepts', title: 'Concepts', element: <Concepts/>},
+        {path: 'about-me', title: 'About Me',element: <About/>},
+        {path: 'quickquisine', title: 'Quick Quisine',element: <QuickQuisine/>},
+        {path: 'parryt', title: 'Parryt', element: <Parryt/>},
+        {path: 'upintheair', title: 'UpInTheAir', element: <UpintheAir/>}
       ]
     return (
     <AnimatePresence>
         <Routes location={location} key={location.pathname}>
             {titleMap.map((item) => 
-            <Route path={item.path} element={item.element}/>
+            <Route path={"portfolio/" + item.path} element={item.element}/>
             )}
         </Routes>
     </AnimatePresence>

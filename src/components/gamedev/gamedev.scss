@@ -1,67 +1,81 @@
 @import "../../global.scss";
 
 .gamedev{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
 
-    h1{
-        font-size: 40px;
-        color: white;
-    }
+	h1{
+		font-size: 40px;
+		color: white;
+	}
 
-    .container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        position: relative;
-        flex-wrap: wrap;   
-        margin-top: 10px;
-        margin-bottom: 10px;
-        overflow:hidden;
-        border: 2px red;
+	.container{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;   
+		margin-top: 10px;
+		overflow: hidden;
 
-        @include mobile{
-            width: 30%;
-          }
+		@include mobile{
+			width: 30%;
+		  }
 
-        .item {
-            margin: 10px;
-            width: 1500px;
-            border: 1px solid rgb(240, 239, 239);
-            align-items: center;
+		.item {
+			margin: 10px;
+			width: 1500px;
+			border-bottom: 2px solid gray;
+			align-items: center;
 
-            .left{
-                float: left;
-                display: flex;
-                justify-content:flex-start;
-                margin: 10px;
+			.left{
+				float: left;
+				display: flex;
+				justify-content:flex-start;
+				margin: 10px;
 
-                img{
-                width: 40%;
-                object-fit: cover;
+				img{
+					border-radius: 15px;
+				width: 500px;
+				object-fit: cover;
 
-                &:hover {
-                    background-color: $mainColor;
-                    }
-                }
-            }
-            .right{
-                background-color: aqua;
-                float:right;
-                display: flex;
-                justify-content:flex-start;
-                h2{
-                    font-size: 20px;
-                    text-decoration:dotted;
-                    z-index: 3;
-
-                }
-            }
-
-        }
-
-    }        
+				&:hover 
+					{
+						background-color: $mainColor;
+					}
+				 }
+			}
+			.right{
+				float: left;
+				margin: 20px;
+				// border: 2px solid red;
+				align-items: center;
+				width: 60%;
+				
+				h2{
+					display:block;
+					width: 100%;
+					margin: 1px;
+					color: white;     
+					font-size: 19px;
+				}
+				h3{	
+					display:block;
+					width: 100%;
+					margin: 1px;
+					color: white;
+					font-size: 30px;
+				}
+				p{
+					display:block;
+					width: 80%;
+					color: gray;          
+					white-space: pre-line;
+					font-size: 23px;
+				}
+			}
+		}
+	}        
 }

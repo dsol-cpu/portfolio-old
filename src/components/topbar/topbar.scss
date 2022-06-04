@@ -13,6 +13,7 @@
     border: 2px red;
     overflow: hidden;
     margin-top: 20px;
+
         img{
             display: flex;
             align-self: center;
@@ -31,7 +32,11 @@
             top: 0;
             font-size: 35px;
             text-decoration: none;
-            color: inherit;        
+            color: peru;
+
+            &:hover{
+                
+            }       
         }
     }
 
@@ -54,8 +59,7 @@
             margin: 10px;
             padding: 0;
             list-style: none;
-            display: flex;
-            
+            display: flex;            
         }
     }
 }

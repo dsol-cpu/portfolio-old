@@ -1,71 +1,37 @@
   export const gamedev = [
     {
+      id: "upintheair",
+      tools: "Unity · C# · Blender · Clip Studio Paint EX",
+      title: "Up in the Air -- (Work in Progress)",
+      desc: "\nI wanted to create a game where my original characters in which mine and others' characters could interact in a story-driven world.",
+      img: "concept art _ hitomi.png",
+    },
+    {
+      id: "alien-search",
+      title: "Alien Search",
+      tools: "Unity · C# · Blender",
+      desc: "\n This was a quick data visualization prototype in Unity done for the 2-day application for Rhombus. I quickly made low-poly props and a system that iterates over the dataset and creates a password for players to decipher.",
+      img: "alien-search2.png",
+    },
+    {
       id: "quickquisine",
+      tools: "Game Design · C++ · SFML · Aseprite · Clip Studio Paint EX",
       title: "Quick Quisine",
-      img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+      desc: "Over the course of 6 months and a team of 4 developers, I proposed the idea for a Rhythm game with a cooking theme. How you are a chef that needs to battle other head chefs in a rhythm cooking battle. ",
+      img: "qq-5.png",
     },
     {
-      id: 2,
-      title: "Web Rampa UI Design",
-      img: "https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 3,
-      title: "Web E-commerce Design",
-      img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 4,
-      title: "Web Relax App",
-      img: "https://cdn.dribbble.com/users/2264844/screenshots/15463998/media/d85e92a332c41094f68e1f716884f7ce.jpg?compress=1&resize=1200x900",
-    },
-    {
-      id: 5,
-      title: "Web Design",
-      img: "https://cdn.dribbble.com/users/387658/screenshots/15458608/media/e92ec1dd33dd1170ae3dc9c5272f2693.jpg?compress=1&resize=1200x900",
-    },
-    {
-      id: 6,
-      title: "Web Banking App",
-      img: "https://cdn.dribbble.com/users/387658/screenshots/15458608/media/e92ec1dd33dd1170ae3dc9c5272f2693.jpg?compress=1&resize=1200x900",
+      id: "parryt",
+      title: "Parryt",
+      tools: "Game Design · C++ · SFML · Aseprite",
+      desc: "A game about Pari the Parrot who can parry attacks at his enemies.",
+      img: "parryt-screenshot.png",
     },
   ];
   
   export const concepts = [
     {
-      id: 1,
-      title: "Mobile Social Media App",
-      img:
-        "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
-    },
-    {
-      id: 2,
-      title: "Mobile Rampa UI Design",
-      img:
-        "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
-    },
-    {
-      id: 3,
-      title: "Mobile E-commerce Design",
-      img:
-        "https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 4,
-      title: "Mobile Relax App",
-      img:
-        "https://cdn.dribbble.com/users/2083704/screenshots/15468619/media/cd958306c7a772449e1ac23bd65ce506.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 5,
-      title: "Mobile Hero Design",
-      img:
-        "https://cdn.dribbble.com/users/26642/screenshots/15462545/media/1a202ef5c8338b6f78634e6edc1ba350.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 6,
-      title: "Mobile Banking App",
-      img:
-        "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+      title: "",
+      img: "qq-1.png",
     },
   ];

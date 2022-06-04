@@ -12,13 +12,12 @@ export default function Concepts() {
       animate={{x: 0, opacity: 1}}
       exit={{x: 300, opacity: 0}}
       transition = {{delay: 0.2}}
-
     >
       <h1> Concepts </h1>
       <div className="container">
           {concepts.map((item) =>
               <div className="item">
-                <img src={item.img} alt="" />
+                <img src={require("../img/" + item.img)} alt="" />
                 <div className="label">{item.title}</div>
               </div>
           )}        
