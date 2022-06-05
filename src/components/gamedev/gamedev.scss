@@ -20,13 +20,9 @@
 		margin-top: 10px;
 		overflow: hidden;
 
-		@include mobile{
-			width: 30%;
-		  }
-
 		.item {
 			margin: 10px;
-			width: 1500px;
+			max-width: 1500px;
 			border-bottom: 2px solid gray;
 			align-items: center;
 
@@ -38,8 +34,8 @@
 
 				img{
 					border-radius: 15px;
-				width: 500px;
-				object-fit: cover;
+					max-width: 500px;
+					object-fit: cover;
 
 				&:hover 
 					{
@@ -52,7 +48,7 @@
 				margin: 20px;
 				// border: 2px solid red;
 				align-items: center;
-				width: 60%;
+				max-width: 60%;
 				
 				h2{
 					display:block;

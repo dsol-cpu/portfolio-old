@@ -17,7 +17,7 @@ export default function Footer() {
           <img src="" alt="" />
         </li>
       </ul>
-      <p> @2022 by David Solinsky</p>
+      <p> ©2022 by David Solinsky</p>
     </div>
   )
 }
