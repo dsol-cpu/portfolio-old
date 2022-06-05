@@ -17,13 +17,13 @@
 			justify-content:flex-end;
 			margin: 10px;
 				img{                       
-					max-width: 550px;
+					min-width: 100px;
 				}
 
 				h1{
 					width: 50%;
 					height: 35%;
-					font-size: 21px;
+					font-size: clamp(10px, 1px + 1vw, 21px);
 					color: white;
 					font-weight: 400;
 				}
@@ -33,14 +33,13 @@
 			display: flex;
 			justify-content:flex-start;
 				h1{
-					max-width: 50%;
-					font-size: 19px;
+					font-size: clamp(10px, 1px + 5vw, 19px);
 					color: white;
 					font-weight: 400;
 				}
 				.button-container{
-					max-height: 40px;
-					max-width: 227px;
+					min-height: 40px;
+					min-width: 227px;
 					margin: 20px 40px;
 					button{
 						border: 3px dotted gold;
@@ -59,7 +58,7 @@
 						}
 
 						img{
-							max-width: 25px;
+							max-width: clamp(19px, 1px + 10vw, 25px);
 							
 						}
 						&:hover {
