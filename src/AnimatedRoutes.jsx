@@ -3,9 +3,10 @@ import GameDev from "./components/gamedev/GameDev";
 import Concepts from "./components/concepts/Concepts";
 import QuickQuisine from "./components/gamedev/games/quickquisine/QuickQuisine";
 import Parryt from "./components/gamedev/games/parryt/Parryt";
+import UpintheAir from "./components/gamedev/games/upintheair/UpintheAir";
+
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import UpintheAir from "./components/gamedev/games/upintheair/UpintheAir";
 
 export default function AnimatedRoutes() {
     const location = useLocation();

@@ -5,7 +5,7 @@ import Resume from '../img/David_Solinsky_CV-5-27-2022.pdf'
 import { motion } from "framer-motion";
 
 export default function About() {
-	const text = "I'm David Solinsky. I'm a Software Engineer, game developer, and artist based in Herndon, Virginia.\n\n I am currently available for work at the following contacts:"
+	const text = "I'm David Solinsky. I'm a Software Engineer, Game Developer, and Artist based in Herndon, Virginia.\n\n I am currently available for work at the following contacts:"
 	const downloadFile = () => {
 		window.location.href = {Resume}
 	}
@@ -24,7 +24,6 @@ export default function About() {
 						<img src={Me} alt="" />
 				</div>
 				<div className="right">
-					<span>
 						<h1> {text} </h1>
 							<div className="button-container">
 								<button onClick={() => downloadFile}>
@@ -32,7 +31,6 @@ export default function About() {
 									<img src={DownloadIcon} alt="" />
 								</button>
 						</div>
-					</span>
 				</div>
 			</div>
 		</motion.div>

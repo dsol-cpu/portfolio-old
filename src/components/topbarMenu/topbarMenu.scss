@@ -8,29 +8,23 @@
     .bordercontainer{
         border-top: 1px solid gray;
         overflow: hidden;
-        min-width: 5rem;
-        // min-height: 2vh;
-        margin: 6px;
+        min-width: 100px;
+        // width: 50%;
         text-overflow:ellipsis;
         white-space:nowrap;
 
         .link {
-            display: block;
-            min-width: 5vw;
-            margin-top: 0.5rem;
+            display: grid;
+            // max-width: max(50%, 5rem);
             text-decoration: none;
             color: white;
-            font-size: clamp(1rem, 0.1rem + 1vw, 10rem);
-            
+            font-size: min(4vw, 19px);   
+            min-width: 5vw;
 
             &:hover{
                 color: orange;
-                border-bottom: 2px orange;
+                border-top: 3.5px solid skyblue;
             }
-        }
-        &:hover{
-            border-top: 3.5px solid skyblue;
-
         }
     }
 }

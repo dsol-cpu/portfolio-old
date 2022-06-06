@@ -1,19 +1,17 @@
 @import "../../global.scss";
 
 .topbar{
-    height: 200px;
+    // height: 200px;
     max-width: 100%;
     background-color: black;
     color: $mainColor;
     position: relative;
     top: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    // flex-direction: column;
     justify-items: center;
     overflow: hidden;
     margin-top: 40px;
-
-
 
         img{
             display: flex;
@@ -31,10 +29,9 @@
 
         .logo {
             top: 0;
-            font-size: 35px;
+            font-size: min(10vw, 35px);
             text-decoration: none;
-            color: peru;
-
+            color: peru;            
             &:hover{
                 
             }       
@@ -45,24 +42,25 @@
         display: flex;
         align-self: center;
         justify-items: center;
-        font-size: clamp(6px, 1px + 5vw, 15px);
+        font-size: min(4vw, 15px);
         color: lightblue;
         text-decoration: none;
     }
 
     .wrapper{
-
-        max-width: 50vw;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        max-width: 1500px;
+        // width: 50%;
+        align-items: row;
+        justify-self: center;
+        justify-items: center;
 
         ul{
+            min-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             margin: 10px;
             padding: 0;
             list-style: none;
-            display: flex;            
         }
     }
 }
