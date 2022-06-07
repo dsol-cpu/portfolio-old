@@ -11,11 +11,12 @@
         min-width: 100px;
         // width: 50%;
         text-overflow:ellipsis;
-        white-space:nowrap;
+        // white-space:nowrap;
 
         .link {
             display: grid;
             // max-width: max(50%, 5rem);
+            text-overflow:ellipsis;
             text-decoration: none;
             color: white;
             font-size: min(4vw, 19px);   
@@ -24,6 +25,7 @@
             &:hover{
                 color: orange;
                 border-top: 3.5px solid skyblue;
+                background-color: #6d6d6d;
             }
         }
     }

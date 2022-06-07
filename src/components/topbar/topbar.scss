@@ -12,14 +12,6 @@
     justify-items: center;
     overflow: hidden;
     margin-top: 40px;
-
-        img{
-            display: flex;
-            align-self: center;
-            justify-items: center;
-            max-width: 64px;
-            max-height: 64px;
-        }    
     
     .logo_container{
         display: flex;
@@ -31,28 +23,26 @@
             top: 0;
             font-size: min(10vw, 35px);
             text-decoration: none;
-            color: peru;            
-            &:hover{
-                
-            }       
+            color: peru; 
         }
     }
 
     a{
-        display: flex;
+        display: grid;
         align-self: center;
         justify-items: center;
-        font-size: min(4vw, 15px);
+        font-size: min(3.5vw, 15px);
         color: lightblue;
         text-decoration: none;
+        text-overflow: ellipsis;
     }
 
     .wrapper{
         max-width: 1500px;
         // width: 50%;
         align-items: row;
-        justify-self: center;
-        justify-items: center;
+        justify-content: center;
+
 
         ul{
             min-width: 100%;
@@ -61,6 +51,25 @@
             margin: 10px;
             padding: 0;
             list-style: none;
+        }
+    }
+    .mobilewrapper{
+        display: none;
+        justify-items: center;
+
+        ul{
+            justify-content: center;
+        }
+    }
+        
+}
+@media (max-width: 768px) {
+    .topbar {
+        .wrapper{
+            display: none;
+        }
+        .mobilewrapper{
+            display: flex;
         }
     }
 }

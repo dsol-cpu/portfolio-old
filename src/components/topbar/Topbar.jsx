@@ -41,6 +41,19 @@ export default function Topbar() {
           ))}
         </ul>
       </div>
+
+      <div className="mobilewrapper">
+        <ul>
+          {list.map((item) => (
+            <TopbarMenu
+              title={item.title}
+              active={selected === item.id}
+              setSelected={setSelected}
+              id={item.id}
+            />
+          ))}
+        </ul>
+      </div>
     </div>        
   )
 }

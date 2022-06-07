@@ -8,8 +8,7 @@
 	height: 100%;    
 
 	h1{
-		z-index: 3;
-		font-size: 40px;
+		font-size: min(6vw, 40px);
 		color: white;
 		overflow: hidden;
 	}
@@ -24,11 +23,13 @@
 		.item {
 			display: flex;
 			overflow: hidden;
-			width: 250px;
-			height: 250px;
-			border-radius: 20px;
-			border: 1px solid rgb(240, 239, 239);
+			max-width: 275px;
+			width: 30%;
+			height: auto;
 			align-items: center;
+			align-content: center;
+			align-self: center;
+			margin: 10px;
 			
 			label{
 				z-index: 3;
@@ -37,12 +38,10 @@
 			}
 
 			img {
+				max-width: 350px;
 				width: 100%;
 				z-index: 0;
-				@include mobile{
-					width: 30%;
-				  }
-			
+
 				&:hover {
 					// background-color: $mainColor;
 					// filter: grayscale(0%);
