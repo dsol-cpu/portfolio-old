@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9a90386d.css",
-    "main.js": "/portfolio/static/js/main.dfe45ad0.js",
+    "main.js": "/portfolio/static/js/main.a6fd31e1.js",
     "static/media/baseball_animatic-2.gif": "/portfolio/static/media/baseball_animatic-2.46bbd5504e8242e57ec3.gif",
     "static/media/the boss concept art.png": "/portfolio/static/media/the boss concept art.1795c3b5288f60b804e2.png",
     "static/media/concept_art amaki.png": "/portfolio/static/media/concept_art amaki.3c99618c406746078023.png",
@@ -31,10 +31,10 @@
     "static/media/vector-download-icon.png": "/portfolio/static/media/vector-download-icon.c4a9a71e2d60cefcaf2c.png",
     "index.html": "/portfolio/index.html",
     "main.9a90386d.css.map": "/portfolio/static/css/main.9a90386d.css.map",
-    "main.dfe45ad0.js.map": "/portfolio/static/js/main.dfe45ad0.js.map"
+    "main.a6fd31e1.js.map": "/portfolio/static/js/main.a6fd31e1.js.map"
   },
   "entrypoints": [
     "static/css/main.9a90386d.css",
-    "static/js/main.dfe45ad0.js"
+    "static/js/main.a6fd31e1.js"
   ]
 }
