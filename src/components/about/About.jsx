@@ -2,6 +2,7 @@ import "./about.scss";
 import Me from '../img/me.png';
 import DownloadIcon from '../img/vector-download-icon.png';
 import Resume from '../img/David_Solinsky_CV-5-27-2022.pdf'
+import { about } from '../../data';
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -24,13 +25,19 @@ export default function About() {
 						<img src={Me} alt="" />
 				</div>
 				<div className="right">
-						<h1> {text} </h1>
-							<div className="button-container">
-								<button onClick={() => downloadFile}>
-									<a href={Resume} className="text" download>Download Resume</a> 
-									<img src={DownloadIcon} alt="" />
-								</button>
-						</div>
+					<h1> {text} </h1>
+					{about.map((icon)=>
+						<a href={icon.url}>
+							<img src={require("../img/" + icon.img)} />
+						</a>
+					)}
+					<div className="button-container">
+						<button onClick={() => downloadFile}>
+							<a href={Resume} className="text" download>Download Resume</a> 
+							<img src={DownloadIcon} alt="" />
+						</button>
+					</div>
+
 				</div>
 			</div>
 		</motion.div>

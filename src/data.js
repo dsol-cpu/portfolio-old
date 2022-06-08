@@ -1,12 +1,3 @@
-export const softwaredev = [
-  {
-    id:"",
-    tools: "",
-    title: "",
-    desc: "",
-    img: ""
-  },
-]
 export const gamedev = [
   {
     id: "upintheair",
@@ -21,6 +12,13 @@ export const gamedev = [
     tools: "Unity · C# · JSON · WebGL · Blender",
     desc: "\nThis was a quick data visualization prototype in Unity done for the 2-day application for Rhombus. I quickly made low-poly props and a system that iterates over the dataset and creates a password for players to decipher.",
     img: "alien-search2.png",
+  },
+  {
+    id: "mk-area",
+    tools: "Python · Blender · KMP · Blender API · Git",
+    title: "Mario Kart Areas Blender Plugin",
+    desc: "In the Cypher VII Hackathon, I worked with a partner to create a Blender plugin that automated data parsing and created a data visualization of the position and rotation of custom track components.",
+    img: "mk-areas-blender-plugin.png"
   },
   {
     id: "quickquisine",
@@ -38,10 +36,31 @@ export const gamedev = [
   },
 ];
 
+export const softwaredev = [
+  {
+    url:"https://github.com/dsol-cpu/User-Account-Automation",
+    tools: "Python · Selenium · JSON · CSV · Automation Script · Git",
+    title: "TikTok Algorithm Research",
+    desc: "Working as an intern to create Python Selenium script to automate user account creation on TikTok",
+    img: ""
+  },
+  {
+    url:"https://github.com/dsol-cpu/portfolio",
+    tools: "ReactJS · Javascript · HTML/SCSS · SASS · Git ",
+    title: "My Portfolio Website",
+    desc: "I learned ReactJS and created a responsive portfolio website from scratch within a week. ",
+    img: ""
+  },
+];
+
 export const concepts = [
   {
     title: "",
     img: "concept art _ hitomi.png",
+  },
+  {
+    title: "",
+    img: "concept_art amaki.png",
   },
   {
     title: "",
@@ -50,6 +69,10 @@ export const concepts = [
   {
     title: "",
     img: "Concept for Tunnel-bigger.png",
+  },
+  {
+    title: "",
+    img: "figuredrawing.png",
   },
   {
     title: "",
@@ -63,4 +86,23 @@ export const concepts = [
     title: "",
     img: "qq-2.png",
   },
+];
+
+export const about = [
+  {
+    img: 'github_2048_black.png',
+    url: 'https://github.com/dsol-cpu',
+  },
+  {
+    img: '606885_linkedin_2048x2048.png',
+    url: 'https://www.linkedin.com/in/david-solinsky/',
+  },
+  {
+    img: 'kisspng-upwork-computer-icons-freelancer-5afbfd8cd74918.6641779715264638848818.png',
+    url: 'https://www.upwork.com/freelancers/~0179a1a2a2df5212fd',
+  },
+  {
+    img: 'instagram-icon-black-png-15.png',
+    url: 'https://www.instagram.com/smep_itty/',
+  },  
 ];

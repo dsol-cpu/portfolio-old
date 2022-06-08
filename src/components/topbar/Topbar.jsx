@@ -12,6 +12,10 @@ export default function Topbar() {
       title: "Game Development",
     },
     {
+      id:"softwaredev",
+      title: "Software Development",
+    },
+    {
       id: "concepts",
       title: "Concepts",
     },

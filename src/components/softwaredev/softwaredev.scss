@@ -1,6 +1,96 @@
 @import "../../global.scss";
 
-.softwaredev
-{
-    
+.softwaredev{
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h1{
+		justify-self: center;
+		font-size: min(6vw, 40px);
+		color: white;
+	}
+
+	.container{
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;   
+		margin-top: 10px;
+		overflow-x: hidden;
+		max-width: 1200px;
+		width: 90%;
+
+		.item {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			justify-items: center;
+			max-width: 1500px;
+			width: 100%;
+			height: 95%;	
+			border-bottom: 2px solid gray;
+
+			.left{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+				justify-content: center;
+				margin: 10px;
+				max-height: 800px;
+
+				img{
+					border-radius: 15px;
+					max-width: 500px;
+					width: 90%;
+
+				&:hover 
+					{
+						background-color: $mainColor;
+					}
+				 }
+			}
+			.right{
+				align-items: center;
+				justify-content: center;
+				max-width: 900px;
+				width: 90%;		
+				max-height: 800px;		
+				margin: 10px;
+				
+				h2{
+					word-wrap: break-word;
+					display:block;
+					width: 100%;
+					margin: 1px;
+					color: white;     
+					font-size: min(2.2vw, 14px);
+				}
+				h3{	
+					display:block;
+					word-wrap: break-word;
+					width: 100%;
+					margin: 1px;
+					color: white;
+					font-size: min(3.7vw, 30px);
+				}
+				p{
+					display:block;
+					word-wrap: break-word;
+					width: 80%;
+					color: gray;          
+					white-space: pre-line;
+					font-size: min(2vw, 23px);
+				}
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		.gamedev {
+			.container{
+				.item{
+					display: none;
+					grid-template-columns: none;
+				}
+			}
+		}     
+	}
 }
