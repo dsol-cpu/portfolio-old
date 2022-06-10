@@ -2,7 +2,7 @@
 
 .routeswitch{
     height: 100vh;
-    background-color: black;
+    background-color: $backgroundColor;
     scrollbar-width: none; //for firefox
 
     &::-webkit-scrollbar{

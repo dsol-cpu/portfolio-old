@@ -1,15 +1,16 @@
 @import "../../global.scss";
 
 .concepts{
-	background-color: black;
+	background-color: $backgroundColor;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	height: 100%;    
+	width: 100%;
 
 	h1{
 		font-size: min(6vw, 40px);
-		color: white;
+		color: $mainColor;
 		overflow: hidden;
 	}
 

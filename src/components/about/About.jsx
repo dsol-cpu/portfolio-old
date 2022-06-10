@@ -6,7 +6,7 @@ import { about } from '../../data';
 import { motion } from "framer-motion";
 
 export default function About() {
-	const text = "I'm David Solinsky. I'm a Software Engineer, Game Developer, and Artist based in Herndon, Virginia.\n\n I am currently available for work at the following contacts:"
+	const text = " I'm a Software Engineer, Game Developer, and Artist based in Herndon, Virginia. I graduated from the College of William and Mary with a Bachelor's of Science in Computer Science."
 	const downloadFile = () => {
 		window.location.href = {Resume}
 	}
@@ -31,6 +31,8 @@ export default function About() {
 							<img src={require("../img/" + icon.img)} />
 						</a>
 					)}
+					<h1> My business email:</h1>
+					<a href="mailto::dsolinsky98@gmail.com">dsolinsky98@gmail.com</a>
 					<div className="button-container">
 						<button onClick={() => downloadFile}>
 							<a href={Resume} className="text" download>Download Resume</a> 

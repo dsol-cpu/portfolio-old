@@ -1,15 +1,15 @@
 @import "../../global.scss";
 
 .gamedev{
-	background-color: black;
+	background-color: $backgroundColor;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	h1{
 		justify-self: center;
-		font-size: min(6vw, 40px);
-		color: white;
+		font-size: min(6vw, 38px);
+		color: $mainColor;
 	}
 
 	.container{
@@ -23,6 +23,8 @@
 		// height: max(40vw, 700px);
 
 		.item {
+			position: relative;
+			box-sizing: border-box;
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			justify-items: center;
@@ -38,6 +40,7 @@
 				justify-content: center;
 				margin: 10px;
 				max-height: 800px;
+				// background-color: $containerBackgroundColor;
 
 				img{
 					border-radius: 15px;
@@ -47,7 +50,7 @@
 
 				&:hover 
 					{
-						background-color: $mainColor;
+						filter:brightness(60%);
 					}
 				 }
 			}
@@ -74,7 +77,7 @@
 					width: 100%;
 					margin: 1px;
 					color: white;
-					font-size: min(3.7vw, 30px);
+					font-size: min(3.7vw, 23.9px);
 				}
 				p{
 					display:block;
@@ -82,7 +85,7 @@
 					width: 80%;
 					color: gray;          
 					white-space: pre-line;
-					font-size: min(2vw, 23px);
+					font-size: min(2vw, 20px);
 				}
 			}
 		}

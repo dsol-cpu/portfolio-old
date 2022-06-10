@@ -1,6 +1,7 @@
 import About from "./components/about/About";
 import GameDev from "./components/gamedev/GameDev";
 import Softwaredev from "./components/softwaredev/Softwaredev";
+import Prowork from "./components/prowork/Prowork";
 import Concepts from "./components/concepts/Concepts";
 import QuickQuisine from "./components/gamedev/games/quickquisine/QuickQuisine";
 import Parryt from "./components/gamedev/games/parryt/Parryt";
@@ -15,6 +16,7 @@ export default function AnimatedRoutes() {
     const titleMap = [
         {path: '', title:'Game Development', element: <GameDev/>},
         {path: 'softwaredev', title:'Software Development', element: <Softwaredev/>},
+        {path: 'prowork', title:'Professional Work', element: <Prowork/>},
         {path: 'concepts', title: 'Concepts', element: <Concepts/>},
         {path: 'about-me', title: 'About Me',element: <About/>},
         {path: 'quickquisine', title: 'Quick Quisine',element: <QuickQuisine/>},

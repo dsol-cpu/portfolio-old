@@ -3,7 +3,7 @@
 .footer{
     margin-top: 1rem;
     padding: 1rem;
-    background-color: black;
+    background-color: $barColor;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -15,7 +15,7 @@
     a{
       font-size: min(3.0vw, 20px);
       text-decoration: none;
-      color: white;
+      color: $mainColor;
       &:hover{
         color: lightskyblue;
       }

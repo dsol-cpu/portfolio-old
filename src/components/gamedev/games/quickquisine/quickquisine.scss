@@ -1,13 +1,14 @@
+@import "../../../../global.scss";
 .quickquisine{
     width: 100%;
     height: 100%;
 
-    background-color: black;
+    background-color: $backgroundColor;
     display: flex;
     flex-direction: column;
     align-items: center;
     h1{
-        color: white;
+        color: $mainColor;
         font-size: 20px;
     }
 }

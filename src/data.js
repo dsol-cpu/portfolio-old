@@ -17,7 +17,7 @@ export const gamedev = [
     id: "mk-area",
     tools: "Python · Blender · KMP · Blender API · Git",
     title: "Mario Kart Areas Blender Plugin",
-    desc: "In the Cypher VII Hackathon, I worked with a partner to create a Blender plugin that automated data parsing and created a data visualization of the position and rotation of custom track components.",
+    desc: "\nIn the Cypher VII Hackathon, I worked with a partner to create a Blender plugin that automated data parsing and created a data visualization of the position and rotation of custom track components.",
     img: "mk-areas-blender-plugin.png"
   },
   {
@@ -34,24 +34,49 @@ export const gamedev = [
     desc: "\nA game about Pari the Parrot who can parry attacks at his enemies.",
     img: "parryt-screenshot.png",
   },
+  // {
+  //   url:"  https://github.com/dsol-cpu/SFML-pong",
+  //   tools: "C++ · SFML · Git",
+  //   title: "Ray Tracer",
+  //   desc: "\nTo introduce myself to SFML and view-logic game programming architecture, I created a 2D pong game.",
+  //   img: "folder-icon.png"
+  // },
 ];
 
 export const softwaredev = [
   {
     url:"https://github.com/dsol-cpu/User-Account-Automation",
     tools: "Python · Selenium · JSON · CSV · Automation Script · Git",
-    title: "TikTok Algorithm Research",
+    title: "Internship - TikTok Algorithm Research",
     desc: "Working as an intern to create Python Selenium script to automate user account creation on TikTok",
-    img: ""
+    img: "tiktok-icon.png"
   },
   {
     url:"https://github.com/dsol-cpu/portfolio",
     tools: "ReactJS · Javascript · HTML/SCSS · SASS · Git ",
     title: "My Portfolio Website",
-    desc: "I learned ReactJS and created a responsive portfolio website from scratch within a week. ",
-    img: ""
+    desc: "I learned ReactJS and created this responsive portfolio website from scratch within a week. ",
+    img: "folder-icon.png"
+  },
+  {
+    url:"https://github.com/dsol-cpu/MMORG-DB",
+    tools: "SQL · PostgreSQL · Python · Git ",
+    title: "MMORPG Database",
+    desc: "With a partner, created an MMORPG D&D themed database that stored player and character information.",
+    img: "database-icon.png"
+  },
+  {
+    url:"https://github.com/dsol-cpu/raytracer",
+    tools: "C · Git ",
+    title: "Ray Tracer",
+    desc: "I created a ray tracer that defines and uses simple primitives with vertex defining image format PPM. ",
+    img: "ray-tracing.gif"
   },
 ];
+
+export const prowork = [
+
+]
 
 export const concepts = [
   {

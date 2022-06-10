@@ -2,14 +2,14 @@
 
 .topbar{
     max-width: 100%;
-    background-color: black;
+    height: auto;
+    background-color: $barColor;
     color: $mainColor;
     position: relative;
     top: 0;
     display: grid;
     justify-items: center;
     overflow: hidden;
-    margin-top: 40px;
     
     .logo_container{
         display: flex;
@@ -19,7 +19,7 @@
 
         .logo {
             top: 0;
-            font-size: min(10vw, 35px);
+            font-size: min(10vw, 40px);
             text-decoration: none;
             color: peru; 
         }
