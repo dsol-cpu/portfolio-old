@@ -3,6 +3,7 @@
 .routeswitch{
     height: 100vh;
     background-color: $backgroundColor;
+	background-image: repeating-radial-gradient(rgba(205, 205, 232, 0.2), rgba(144, 144, 183, 0.2),#1c2619 102%);
     scrollbar-width: none; //for firefox
 
     &::-webkit-scrollbar{

@@ -9,20 +9,18 @@ export default function GameDev() {
 			className="gamedev"
 			id="gamedev"
 
-			initial={{x: 300, opacity: 0}}
-			animate={{x: 0, opacity: 1}}
-			exit={{x: 300, opacity: 0}}
+			initial={{opacity: 0}}
+			animate={{opacity: 1}}
+			exit={{opacity: 0}}
 			transition = {{delay: 0.2}}
 		>
 			<h1>Game Development</h1>
 				<div className="container">
 					{gamedev.map((item) =>
 						<div className="item">
-							<Link to={item.id}>
 								<div className="left">
 									<img src={require("../img/"+item.img)} />
 								</div>
-							</Link>
 							<div className="right">
 									<h2>{item.tools}</h2>
 									<h3>{item.title}</h3>

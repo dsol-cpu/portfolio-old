@@ -9,9 +9,9 @@ export default function Softwaredev() {
 		className="softwaredev"
 		id="softwaredev"
 
-		initial={{x: 300, opacity: 0}}
-		animate={{x: 0, opacity: 1}}
-		exit={{x: 300, opacity: 0}}
+		initial={{opacity: 0}}
+		animate={{opacity: 1}}
+		exit={{opacity: 0}}
 		transition = {{delay: 0.2}}
 		>
 		<h1>Software Development</h1>
