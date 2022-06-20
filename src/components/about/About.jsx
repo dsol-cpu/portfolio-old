@@ -4,6 +4,7 @@ import DownloadIcon from '../img/vector-download-icon.png';
 import Resume from '../img/David_Solinsky_CV-5-27-2022.pdf'
 import { about } from '../../data';
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 export default function About() {
 	const text = " I'm a Software Engineer, Game Developer, and Artist based in Herndon, Virginia. I graduated from the College of William and Mary with a Bachelor's of Science in Computer Science."
@@ -20,6 +21,10 @@ export default function About() {
 			exit={{opacity: 0}}
 			transition = {{delay: 0.2}}
 		>
+		<Helmet>
+			<title>{docTitle}</title>
+			<meta name="About Me | David Solinsky" content={docTitle} />
+      	</Helmet>
 			<div className="container">
 				<div className="left">
 						<img src={Me} alt="" />

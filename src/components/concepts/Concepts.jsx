@@ -13,6 +13,10 @@ export default function Concepts() {
 			exit={{opacity: 0}}
 			transition = {{delay: 0.2}}
     >
+      <Helmet>
+        <title>{docTitle}</title>
+        <meta name="Concepts | David Solinsky" content={docTitle} />
+      </Helmet>
       <h1> Concepts </h1>
       <div className="container">
           {concepts.map((item) =>
