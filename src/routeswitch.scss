@@ -2,18 +2,11 @@
 
 .routeswitch{
     height: 100vh;
+    width: calc(300px + 85vw);
     background-color: $backgroundColor;
-	background-image: repeating-radial-gradient(rgba(205, 205, 232, 0.2), rgba(144, 144, 183, 0.2),#1c2619 102%);
     scrollbar-width: none; //for firefox
 
     &::-webkit-scrollbar{
         display: none;
     }
-
-    @include mobile{
-        width: 30%vw;
-        height: 20%vh;
-      }
-
-
 }

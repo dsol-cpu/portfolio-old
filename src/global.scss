@@ -2,10 +2,12 @@ $mainColor: white;
 $backgroundColor: #171a1d;
 $barColor: #2e3032;
 $containerBackgroundColor: #0c0c0d;
-$width: 768px;
+$maxwidth: 768px;
+$sidebarWidth: 250px;
+$mobileSidebarWidth: 150px;
 
 @mixin mobile {
-    @media (max-width: #{$width}){
+    @media (max-width: #{$maxwidth}){
         @content
     }
 }

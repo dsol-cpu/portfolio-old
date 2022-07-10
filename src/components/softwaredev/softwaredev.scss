@@ -3,10 +3,11 @@
 .softwaredev{
 	background-color: $backgroundColor;
 	background-image: repeating-radial-gradient(rgba(205, 205, 232, 0.2), rgba(144, 144, 183, 0.2),#1c2619 102%);
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-left: -10%;
+	height: 100%;
 
 	h1{
 		justify-self: center;
@@ -15,33 +16,38 @@
 	}
 
 	.container{
+		display: flex;
+		margin-top: 50px;
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;   
-		margin-top: 10px;
+		margin-left: $sidebarWidth;
 		overflow-x: hidden;
 		max-width: 1200px;
-		width: 90%;
+		
 
 		.item {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
+			gap: 5px;
 			justify-items: center;
 			max-width: 1500px;
-			width: 90%;
-			height: 95%;	
-			border-bottom: 2px solid gray;
+			width: 50%;
+			// height: 95%;
+			transition: all 1s ease;	
 
 			.left{
 				display: flex;
 				justify-content: center;
-				margin: 10px;
-				max-height: 800px;
+				max-height: 1000px;
+				width: auto;
+				float: left;
 
 				img{
+					object-fit: contain;
 					border-radius: 15px;
-					max-width: 200px;
-					width: 90%;
+					max-width: 250px;
+					// width: 100%;
 
 				&:hover 
 					{
@@ -53,17 +59,18 @@
 				align-items: center;
 				justify-content: center;
 				max-width: 900px;
-				width: 100%;		
-				max-height: 800px;		
+				width: 100%;	
+				max-height: 100%;		
 				margin: 10px;
+				float: right;
+				overflow: hidden;
+
 				
 				h2{
-					word-wrap: break-word;
-					display:block;
 					width: 100%;
 					margin: 1px;
-					color: white;     
-					font-size: min(2.2vw, 14px);
+					color: white;
+					font-size: min(2vw, 13px);
 				}
 				h3{	
 					display:block;
@@ -71,26 +78,28 @@
 					width: 100%;
 					margin: 1px;
 					color: white;
-					font-size: min(3.7vw, 23.9px);
+					font-size: min(3.7vw, 23px);
 				}
 				p{
 					display:block;
 					word-wrap: break-word;
 					width: 80%;
-					color: gray;          
+					color: gray;
 					white-space: pre-line;
-					font-size: min(2vw, 23px);
+					font-size: min(2vw, 21px);
 				}
 			}
 		}
 	}
-	@media (max-width: 768px) {
-		.gamedev {
-			.container{
-				.item{
-					display: none;
-					grid-template-columns: none;
-				}
+}
+
+@media (max-width: 768px) {
+	.softwaredev {
+		.container {
+			.item {
+				margin-left: $mobileSidebarWidth;
+				width: 80%;
+				grid-template-columns: 1fr;
 			}
 		}     
 	}

@@ -3,10 +3,11 @@
 .gamedev{
 	background-color: $backgroundColor;
 	background-image: repeating-radial-gradient(rgba(205, 205, 232, 0.2), rgba(144, 144, 183, 0.2),#1c2619 102%);
-
-	display: flex;
-	flex-direction: column;
+	display:flex;
+	justify-content: center;
 	align-items: center;
+	margin-left: -10%;
+	transition: all 1s ease;
 
 	h1{
 		justify-self: center;
@@ -15,39 +16,47 @@
 	}
 
 	.container{
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;   
-		margin-top: 10px;
+		display: grid;
+		grid-template-columns: 1fr;
 		overflow-x: hidden;
 		max-width: 1200px;
-		width: 90%;
-		// height: max(40vw, 700px);
+		box-sizing: border-box;
+		margin-left: 20%;
+		margin-top: 50px;
 
 		.item {
-			position: relative;
-			box-sizing: border-box;
+			// position: relative;
+			// box-sizing: border-box;
 			display: grid;
 			grid-template-columns: 1fr 1fr;
+			// grid-template-columns: 1fr 1fr;
 			justify-items: center;
 			max-width: 1500px;
-			width: 100%;
+			// width: 100%;
 			// min-height: 200px;
 			height: 95%;	
-			border-bottom: 2px solid gray;
+			transition: all 1s ease;
+
+			// border-bottom: 2px solid gray;
 			// border:2px solid red;
 
 			.left{
 				display: flex;
 				justify-content: center;
-				margin: 10px;
+				// margin: 10px;
 				max-height: 800px;
+				width: 100%;
+				float: left;
+				transition: all 1s ease;
+
 				// background-color: $containerBackgroundColor;
 
 				img{
 					border-radius: 15px;
-					max-width: 500px;
-					width: 90%;
+					object-fit: cover;
+					object-position: 50% 50%;
+					width: 100%;
+					max-width: 1200px;
 					// object-fit:inherit;
 				 }
 			}
@@ -55,13 +64,14 @@
 				align-items: center;
 				justify-content: center;
 				max-width: 900px;
-				width: 90%;		
-				max-height: 800px;		
-				margin: 10px;
-				// height: 90%;
+				width: 90%;
+				max-height: 800px;	
+				transition: all 1s ease;
+	
+				// margin: 10px;
 				
 				h2{
-					word-wrap: break-word;
+					word-wrap:normal;
 					display:block;
 					width: 100%;
 					margin: 1px;
@@ -87,14 +97,32 @@
 			}
 		}
 	}
-	@media (max-width: 768px) {
-		.gamedev {
-			.container{
-				.item{
-					display: none;
-					grid-template-columns: none;
+}
+@media (max-width: 1200px) {
+	.gamedev{
+		margin: 0 auto;
+		.container{
+			display: grid;
+			margin-left: -4%;
+			
+			
+			.item{
+				display: grid;
+				grid-template-columns: 1fr;
+
+				// margin-left: 10%;
+
+				.left{
+
+					img{
+						width: 60%;
+					}
+				}
+				.right{
+					width: 60%;
 				}
 			}
 		}     
 	}
 }
+

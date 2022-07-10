@@ -9,7 +9,6 @@ import Concepts from "./components/concepts/Concepts";
 // import MK_Area from "./components/gamedev/games/mk_area/MK_Area";
 
 import { Route, Routes, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
 
 export default function AnimatedRoutes() {
     const location = useLocation();
@@ -25,12 +24,10 @@ export default function AnimatedRoutes() {
         // {path: 'mk-area', title: 'MK-Area', element: <MK_Area/>}
       ]
     return (
-    <AnimatePresence>
         <Routes location={location} key={location.pathname}>
             {titleMap.map((item) => 
-            <Route path={"portfolio/" + item.path} element={item.element}/>
+              <Route path={"portfolio/" + item.path} element={item.element}/>
             )}
         </Routes>
-    </AnimatePresence>
   )
 }

@@ -1,7 +1,7 @@
 import "./about.scss";
 import Me from '../img/me.png';
 import DownloadIcon from '../img/vector-download-icon.png';
-import Resume from '../img/David_Solinsky_CV-5-27-2022.pdf'
+import Resume from '../img/David_Solinsky_Resume-6-19-2022.pdf'
 import { about } from '../../data';
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
@@ -12,19 +12,7 @@ export default function About() {
 		window.location.href = {Resume}
 	}
 	return (
-		<motion.div 
-			className="about" 
-			id="about"
-
-			initial={{opacity: 0}}
-			animate={{opacity: 1}}
-			exit={{opacity: 0}}
-			transition = {{delay: 0.2}}
-		>
-		<Helmet>
-			<title>{docTitle}</title>
-			<meta name="About Me | David Solinsky" content={docTitle} />
-      	</Helmet>
+		<div className="about" 	id="about">
 			<div className="container">
 				<div className="left">
 						<img src={Me} alt="" />
@@ -47,6 +35,6 @@ export default function About() {
 
 				</div>
 			</div>
-		</motion.div>
+		</div>
 	)
 }

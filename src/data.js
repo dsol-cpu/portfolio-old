@@ -3,7 +3,7 @@ export const gamedev = [
     id: "upintheair",
     tools: "Unity · C# · Blender · CSV · Clip Studio Paint EX",
     title: "Up in the Air -- (Work in Progress)",
-    desc: "\nI wanted to create a game where my original characters in which mine and others' characters could interact in a story-driven world with a dynamic dialogue system.",
+    desc: "\nI wanted to create a game where my original characters and others' characters could interact in a story-driven world with a dynamic dialogue system.",
     img: "concept art _ hitomi.png",
   },
   {
@@ -105,11 +105,19 @@ export const concepts = [
   },
   {
     title: "",
-    img: "qq-1.png",
+    img: "commissionforKeith.png",
   },
   {
     title: "",
-    img: "qq-2.png",
+    img: "eizouken.png",
+  },
+  {
+    title: "",
+    img: "flathatboyscout.png",
+  },
+  {
+    title: "",
+    img: "brainstorming.png",
   },
 ];
 

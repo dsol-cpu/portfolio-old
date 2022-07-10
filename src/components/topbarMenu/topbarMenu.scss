@@ -6,26 +6,29 @@
     transition: all 1s ease;
 
     .bordercontainer{
-        border-top: 1px solid gray;
+        max-width: 100%;
+        // border-top: 1px solid gray;
         overflow: hidden;
         min-width: 100px;
-        // width: 50%;
         text-overflow:ellipsis;
         // white-space:nowrap;
 
         .link {
             display: grid;
+            justify-content: center;
             // max-width: max(50%, 5rem);
             text-overflow:ellipsis;
             text-decoration: none;
             color: white;
-            font-size: min(4vw, 19px);   
+            font-size: min(4vw, 17px);   
             min-width: 5vw;
 
             &:hover{
                 color: orange;
-                border-top: 3.5px solid skyblue;
-                background-color: #6d6d6d;
+                // border-top: 1px solid skyblue;
+            }
+            &:active{
+                color: black;
             }
         }
     }

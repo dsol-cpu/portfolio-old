@@ -1,15 +1,17 @@
-import Topbar from "./components/topbar/Topbar";
-import Footer from "./components/footer/Footer";
-import AnimatedRoutes from "./AnimatedRoutes";
+import Sidebar from "./components/sidebar/Sidebar";
+import Menu from "./components/menu/Menu";
 import { BrowserRouter as Router} from 'react-router-dom';
+import AnimatedRoutes from "./AnimatedRoutes";
 import "./routeswitch.scss"
+import { useState } from "react";
 function RouteSwitch() {
+  const[menuOpen, setMenuOpen] = useState(false);
   return (
     <Router>
       <div className="routeswitch">
-        <Topbar />
-          <AnimatedRoutes/>
-        <Footer />
+        <Sidebar menuOpen = {menuOpen} setMenuOpen = {setMenuOpen}/>
+        <Menu menuOpen = {menuOpen} setMenuOpen = {setMenuOpen}/>
+        <AnimatedRoutes/>
       </div>
     </Router>
   );

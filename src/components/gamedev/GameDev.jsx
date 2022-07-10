@@ -5,16 +5,8 @@ import { Link } from "react-router-dom";
 var bool = true;
 export default function GameDev() {
 	return (
-		<motion.div 
-			className="gamedev"
-			id="gamedev"
-
-			initial={{opacity: 0}}
-			animate={{opacity: 1}}
-			exit={{opacity: 0}}
-			transition = {{delay: 0.2}}
-		>
-			<h1>Game Development</h1>
+		<div className="gamedev" id="gamedev">
+			{/* <h1>Game Development</h1> */}
 				<div className="container">
 					{gamedev.map((item) =>
 						<div className="item">
@@ -29,6 +21,6 @@ export default function GameDev() {
 						</div>
 					)}        
 				</div>
-		</motion.div>
+		</div>
 	)
 }
